@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>	
+	var rand
+	rand = Math.floor((Math.random()*10)+1);
+
+	var input 
+	input = window.prompt("Please enter a number(1-10)")
+
+	while(input != rand){
+		input = wrongAnswer(input);
+	}
+	while(input == rand){
+		input = correctAnswer(input);
+	}
+
+
+	function wrongAnswer(input1){
+			input1 = window.prompt("Please enter again!");
+			return input1;
+	}
+	function correctAnswer(correct){
+		correct = alert("Congratulations!");
+		return correct;
+	}
+</script>
+</body>
+</html>
